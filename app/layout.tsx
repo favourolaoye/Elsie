@@ -16,16 +16,16 @@ const cirka = localFont({
   src: [
     {
       path: "../public/Cirka-Bold.otf",
-      weight: "400",
+      weight: "700",
       style: "bold",
     },
     {
       path: "../public/Cirka-Light.otf",
-      weight: "700",
+      weight: "400",
       style: "light",
     },
   ],
-  variable: "--font-circa",
+  variable: "--font-cirka",
   display: "swap",
 })
 

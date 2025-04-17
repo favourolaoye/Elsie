@@ -39,25 +39,25 @@ export default function Hero() {
     )
 
     // Animate heading with split text effect
-    if (headingRef.current) {
-      const words = headingRef.current.innerText.split(" ")
-      headingRef.current.innerHTML = ""
+    // if (headingRef.current) {
+    //   const words = headingRef.current.innerText.split(" ")
+    //   headingRef.current.innerHTML = ""
 
-      words.forEach((word) => {
-        const span = document.createElement("span")
-        span.className = "inline-block mr-[0.25em]" // Add right margin
-        span.textContent = word // Remove the space from here
-        headingRef.current?.appendChild(span)
-      })
+    //   words.forEach((word) => {
+    //     const span = document.createElement("span")
+    //     span.className = "inline-block mr-[0.25em]" // Add right margin
+    //     span.textContent = word // Remove the space from here
+    //     headingRef.current?.appendChild(span)
+    //   })
 
-      gsap.from(headingRef.current.children, {
-        y: 40,
-        opacity: 0,
-        duration: 0.8,
-        stagger: 0.1,
-        delay: 0.4,
-      })
-    }
+    //   gsap.from(headingRef.current.children, {
+    //     y: 40,
+    //     opacity: 0,
+    //     duration: 0.8,
+    //     stagger: 0.1,
+    //     delay: 0.4,
+    //   })
+    // }
 
     // Animate image
     tl.from(
@@ -149,8 +149,8 @@ export default function Hero() {
               Handcrafted with love
             </div>
             <h1 ref={headingRef} className="text-4xl md:text-6xl font-bold leading-tight font-serif">
-              <span className="block">Delicious Cakes</span>
-              <span className="block mt-2 gradient-text">For Every Celebration</span>
+              <span className="block font-serif">Delicious Cakes</span>
+              <span className="block mt-2 gradient-text font-serif">For Every Celebration</span>
             </h1>
             <p className="text-lg text-gray-600 max-w-xl">
               At CakesByElsie, we create beautiful, delicious cakes that make your special moments unforgettable. Each

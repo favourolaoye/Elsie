@@ -17,7 +17,7 @@ export default function Footer() {
                       priority 
                       className="w-auto h-[70px]" 
                     />
-            <p className="text-gray-400">Making your celebrations sweeter since 2010.</p>
+            <p className="text-gray-400">Making your celebrations sweeter since 2019.</p>
 
             {/* Social Media Links */}
             <div className="pt-4">
